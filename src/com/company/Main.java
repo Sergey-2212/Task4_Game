@@ -25,7 +25,7 @@ public class Main {
                 System.out.println("!!!Кожаный мешок победил!!!");
                 break;
             }
-            if (nothingMore()) {
+            if (isDraw()) {
                 System.out.println("Ничья.");
                 break;
             }
@@ -35,7 +35,7 @@ public class Main {
                 System.out.println("!!!Компьютер победил!!!");
                 break;
             }
-            if (nothingMore()) {
+            if (isDraw()) {
                 System.out.println("Ничья.");
                 break;
             }
@@ -158,7 +158,7 @@ public class Main {
         }
 
 
-    public static boolean nothingMore() {
+    public static boolean isDraw() {
         for (int y = 0; y < SIZE; y++) {
             for (int x = 0; x < SIZE; x++) {
                 if (field[y][x] == DOT_EMTY) return false;
